@@ -1,0 +1,178 @@
+.VacationCard {
+    position: relative;
+    width: 280px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #f9745d;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(135deg, #d0ebf7, #ffffff);
+
+}
+
+.VacationCard:hover {
+    transform: scale(1.05);
+}
+
+.VacationCard .cardContent {
+    /* position: absolute; */
+    z-index: 1;
+    height: 50%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+
+.VacationCard .destination {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #474744;
+    overflow: visible;
+    text-align: center;
+}
+
+.VacationCard .dateRange {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #444;
+    margin: 3px;
+}
+
+.VacationCard .information {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 80px;
+    padding-right: 4px;
+    font-size: 0.95em;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    scrollbar-width: thin;
+    scrollbar-color: #ff6a88 #ffe4eb;
+}
+
+.VacationCard .information::-webkit-scrollbar {
+    width: 6px;
+}
+
+.VacationCard .information::-webkit-scrollbar-thumb {
+    background-color: #ff6a88;
+    border-radius: 10px;
+}
+
+
+.VacationCard .cardImage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.VacationCard .cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 15px 15px;
+}
+
+
+/* --- Like button bubble design --- */
+
+
+.like-button {
+    background: linear-gradient(135deg, #ff6a88, #ff99ac);
+    border: none;
+    border-radius: 25px;
+    /* pill shape */
+    padding: 6px 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 55px;
+}
+
+.like-button:hover {
+    background: linear-gradient(135deg, #fa7b99, #f9745d);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.like-button:active {
+    transform: scale(0.95);
+}
+
+/* Heart icon inside button */
+.like-button .heart {
+    font-size: 1.2rem;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.like-button .heart.liked {
+
+    color: rgb(247, 61, 61);
+}
+
+/* Number inside button */
+.like-button .like-length {
+    font-size: 0.95em;
+    font-weight: bold;
+    color: white;
+    min-width: 12px;
+    /* keeps spacing even at 0 */
+    text-align: right;
+}
+
+.admin-btn {
+    background: linear-gradient(135deg, #f99fb1, #f4c3cc);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 25px;
+    /* smooth edges */
+    color: white;
+    font-weight: bold;
+    margin: 2px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+}
+
+.adminEdit {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.admin-btn:hover {
+    background: linear-gradient(135deg, #ed6f8c, #f07a65);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.admin-btn:active {
+    transform: scale(0.95);
+}

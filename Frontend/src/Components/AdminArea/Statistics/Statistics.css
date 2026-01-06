@@ -1,0 +1,21 @@
+.statistics-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.download-btn {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #ff6a88, #ff99ac);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    opacity: 0.9;
+}

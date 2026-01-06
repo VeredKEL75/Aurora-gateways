@@ -1,0 +1,58 @@
+[{
+  "_id": {
+    "$oid": "68a478cae3e9831f7c219887"
+  },
+  "firstName": "Mario",
+  "lastName": "Cards",
+  "email": "mario@gmail.com",
+  "password": "794ead18d88b53937aea00fe0da63c671671b912d88aa5d73d9c2b594d53c716be78bff73c83436a873ad1422c43fabda917648c365c93bd3c1b1b10dd90daf3",
+  "roleId": 1
+},
+{
+  "_id": {
+    "$oid": "68b2b9f5f728b272acaa200e"
+  },
+  "firstName": "man",
+  "lastName": "last",
+  "email": "lastman@gmail.com",
+  "password": "87a1f6ffbc0f4204932c5e8501c66f803c3623bfed40c230d94ee8d531fbefa237f6adaff21ea5c2d267383a116c6a2d90e379b8b3b763f53208796b46f38663",
+  "roleId": 2,
+  "createdAt": {
+    "$date": "2025-08-30T08:44:37.599Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-30T08:44:37.599Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b31f2e723048248a6f72aa"
+  },
+  "firstName": "Admin",
+  "lastName": "Adminovich",
+  "email": "admin@gmail.com",
+  "password": "9d2cfc1ef5118f7af64153e6299f3d7d0dbfca647bc89a33207e8a45953ec07bf87b24ddc2a029d3e86ed4305bc883be683816ef28a5054c67b1da048c887b33",
+  "roleId": 2,
+  "createdAt": {
+    "$date": "2025-08-30T15:56:30.356Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-30T15:56:30.356Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b6b6de479f169b6878b3f6"
+  },
+  "firstName": "Homer",
+  "lastName": "Simpsons",
+  "email": "Homer@gmail.com",
+  "password": "d3768e3a11417a2228cccb0b38d7182005c396791f625826e8eff5646c4306d2554360c6c2a6635359358688243206fe2b6b96d9012a070ecc00579f69e834e9",
+  "roleId": 2,
+  "createdAt": {
+    "$date": "2025-09-02T09:20:30.535Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-02T09:20:30.535Z"
+  }
+}]

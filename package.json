@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-fileupload": "^1.5.2",
+    "react-icons": "^5.5.0",
+    "uploaded-file-saver": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/express-fileupload": "^1.5.1"
+  }
+}

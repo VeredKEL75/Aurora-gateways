@@ -1,0 +1,241 @@
+[{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62a0"
+  },
+  "destination": "Amsterdam",
+  "description": "Canal cruises and famous museums",
+  "startDate": {
+    "$date": "2025-09-04T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-09-19T00:00:00.000Z"
+  },
+  "price": 900,
+  "imageName": "a544a900-e357-4cda-939c-b81f02bd9d59.jfif",
+  "userLikes": [
+    {
+      "$oid": "68b2b9f5f728b272acaa200e"
+    },
+    {
+      "$oid": "68b6b6de479f169b6878b3f6"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62a2"
+  },
+  "destination": "Bangkok",
+  "description": "Street food and golden temples",
+  "startDate": {
+    "$date": "2025-03-10T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-03-20T00:00:00.000Z"
+  },
+  "price": 1300,
+  "imageName": "53143e0b-2c57-4635-83ca-cd4fa17b2a1d.jpg",
+  "userLikes": []
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62a3"
+  },
+  "destination": "Sydney",
+  "description": "Opera House and Bondi Beach",
+  "startDate": {
+    "$date": "2025-02-15T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-02-25T00:00:00.000Z"
+  },
+  "price": 2500,
+  "imageName": "a732c958-d12f-4d6e-8d25-94b038c2ef19.jfif",
+  "userLikes": [
+    {
+      "$oid": "68b2b9f5f728b272acaa200e"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62a4"
+  },
+  "destination": "Dubai",
+  "description": "Luxury shopping and desert adventures",
+  "startDate": {
+    "$date": "2025-01-20T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-01-27T00:00:00.000Z"
+  },
+  "price": 1800,
+  "imageName": "c422c10e-4e16-4eb0-9d65-c32e880330eb.jfif",
+  "userLikes": [
+    {
+      "$oid": "68b6b6de479f169b6878b3f6"
+    },
+    {
+      "$oid": "68b2b9f5f728b272acaa200e"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62a5"
+  },
+  "destination": "Cairo",
+  "description": "Pyramids of Giza and Nile River cruise",
+  "startDate": {
+    "$date": "2025-03-01T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-03-08T00:00:00.000Z"
+  },
+  "price": 1100,
+  "imageName": "76820334-d81f-4ad6-a09d-66fb8bb58027.jfif",
+  "userLikes": [
+    {
+      "$oid": "68b6b6de479f169b6878b3f6"
+    },
+    {
+      "$oid": "68b2b9f5f728b272acaa200e"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62a6"
+  },
+  "destination": "Rio de Janeiro",
+  "description": "Beaches, Carnival, and Christ the Redeemer",
+  "startDate": {
+    "$date": "2024-12-06T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-02-14T00:00:00.000Z"
+  },
+  "price": 1700,
+  "imageName": "5a4515d5-8f62-4504-bfb0-ffedbca2219e.jpg",
+  "userLikes": []
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62a7"
+  },
+  "destination": "Los Angeles",
+  "description": "Hollywood, Venice Beach, and theme parks",
+  "startDate": {
+    "$date": "2025-08-01T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-08-10T00:00:00.000Z"
+  },
+  "price": 1500,
+  "imageName": "8e84ee99-c7c5-42bd-b3da-3be6cdf20e1d.jfif",
+  "userLikes": []
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62a8"
+  },
+  "destination": "Toronto",
+  "description": "Niagara Falls and multicultural city life",
+  "startDate": {
+    "$date": "2025-06-01T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "price": 1250,
+  "imageName": "e9972fdb-0cf2-4d25-a166-8a34a3924af9.jfif",
+  "userLikes": []
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62a9"
+  },
+  "destination": "Moscow",
+  "description": "Red Square and Russian history",
+  "startDate": {
+    "$date": "2024-12-12T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-01-18T00:00:00.000Z"
+  },
+  "price": 1600,
+  "imageName": "4f9aeb4d-2eb7-47ba-8e18-cb1232fa5eb3.jfif",
+  "userLikes": [
+    {
+      "$oid": "68b2b9f5f728b272acaa200e"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62aa"
+  },
+  "destination": "Cape Town",
+  "description": "Table Mountain and Cape of Good Hope",
+  "startDate": {
+    "$date": "2025-11-15T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-11-25T00:00:00.000Z"
+  },
+  "price": 1900,
+  "imageName": "dce80aea-2a2e-4683-b128-974ba11e4994.jfif",
+  "userLikes": []
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62ab"
+  },
+  "destination": "Istanbul",
+  "description": "Historic mosques and bazaars",
+  "startDate": {
+    "$date": "2025-07-16T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-09-25T00:00:00.000Z"
+  },
+  "price": 950,
+  "imageName": "0ceb2db3-a379-487c-9058-62fc77a83367.jfif",
+  "userLikes": [
+    {
+      "$oid": "68b2b9f5f728b272acaa200e"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68b49aa18abc11db793e62ac"
+  },
+  "destination": "Hong Kong",
+  "description": "Skyline views and street markets",
+  "startDate": {
+    "$date": "2025-10-15T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-10-23T00:00:00.000Z"
+  },
+  "price": 1750,
+  "imageName": "6688c74c-9d10-480a-a6cb-921a3571a56f.jfif",
+  "userLikes": []
+},
+{
+  "_id": {
+    "$oid": "68c58f98589b95648b275ae5"
+  },
+  "destination": "Hanoi",
+  "description": "Bikes everywhere",
+  "startDate": {
+    "$date": "2025-09-14T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-09-17T00:00:00.000Z"
+  },
+  "price": 3888,
+  "userLikes": [],
+  "imageName": "44dcd55e-e236-4a6e-82df-05cacb4dd7ff.avif"
+}]

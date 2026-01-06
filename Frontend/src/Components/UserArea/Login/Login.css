@@ -1,0 +1,124 @@
+.Login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 80vh;
+    background: linear-gradient(135deg, #fff0f3, #ffe4eb);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.Login form {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+.Login label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: -5px;
+}
+
+.Login input {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.Login input:focus {
+    border-color: #ff6a88;
+    box-shadow: 0 0 6px rgba(255, 106, 136, 0.3);
+}
+
+/* Login button */
+.Login form button[type="submit"] {
+    background: linear-gradient(135deg, #ff6a88, #ff99ac);
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Login form button[type="submit"]:hover {
+    background: linear-gradient(135deg, #fa7b99, #f9745d);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Register section */
+.Login p {
+    margin-top: 20px;
+    color: #444;
+    font-size: 14px;
+}
+
+.Login>button {
+    margin-top: 10px;
+}
+
+.Login>button {
+    background: linear-gradient(135deg, #ff6a88, #ff99ac);
+    border: none;
+    border-radius: 25px;
+    /* pill shape */
+    padding: 6px 14px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 55px;
+    /* enough space for heart + number */
+}
+
+
+.Login>button:hover {
+    background: linear-gradient(135deg, #fa7b99, #f9745d);
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+
+/* wrapper to keep input + icon aligned */
+.passwordWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* make the input full width, same as email */
+.passwordInput {
+    flex: 1;
+    padding-right: 35px;
+    /* leave room so text doesn't overlap icon */
+}
+
+/* eye icon styles */
+.eyeIcon {
+    display: flex;
+    margin-left: 8px;
+    right: 10px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    transition: color 0.2s;
+}

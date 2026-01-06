@@ -1,0 +1,53 @@
+.AddVacation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff0f3, #ffe4eb);
+    font-family: "Segoe UI", sans-serif;
+    gap: 20px;
+}
+
+
+
+.AddVacation form {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.AddVacation .MuiTextField-root {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.AddVacation .MuiOutlinedInput-root {
+    border-radius: 10px;
+}
+
+.AddVacation .MuiButtonGroup-root {
+    display: flex;
+    gap: 10px;
+}
+
+.AddVacation .MuiButton-root {
+    background: linear-gradient(135deg, #ff6a88, #ff99ac);
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    text-transform: none;
+}
+
+.AddVacation .MuiButton-root:hover {
+    background: linear-gradient(135deg, #fa7b99, #f9745d);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}

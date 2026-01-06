@@ -1,0 +1,64 @@
+.EditVacation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(135deg, #fff0f3, #ffe4eb);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.EditVacation form {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+.EditVacation label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: -5px;
+}
+
+.EditVacation input,
+.EditVacation textarea {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.EditVacation input:focus,
+.EditVacation textarea:focus {
+    border-color: #ff6a88;
+    box-shadow: 0 0 6px rgba(255, 106, 136, 0.3);
+}
+
+.EditVacation button[type="submit"],
+.EditVacation Button {
+    background: linear-gradient(135deg, #ff6a88, #ff99ac);
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-inline: 10px;
+
+}
+
+.EditVacation button[type="submit"]:hover,
+.EditVacation Button:hover {
+    background: linear-gradient(135deg, #fa7b99, #f9745d);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}

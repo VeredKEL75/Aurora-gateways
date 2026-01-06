@@ -1,0 +1,87 @@
+#the command for all - building image, container and running it
+
+#without rebuilding the image: 
+#Our entire apps:
+
+#docker compose up -d --build
+#docker compose up -d
+#docker compose down
+#push all images to DockerHub:      docker compose push
+#pull all images from DockerHub:    docker compose pull
+
+#pulling from other's image:        docker compose -f {name of other's yaml} docker-compose-assaf.yml push
+services:
+
+  #Our database
+  database-service:
+    #image name:
+    image: mongo:6.0
+    # veredkel/aurora_getaways-database:1.0
+
+    #Dockerfile location:
+    # build: ./Database
+
+    #container name:
+    container_name: aurora_getaways-database
+
+    restart: unless-stopped
+
+    volumes:
+      - aurora_getaways-volume:/data/db #persisting data even if container is down
+
+    #declaring environment env values that are not fitting for our project anymore
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: Alice
+      MONGO_INITDB_ROOT_PASSWORD: Pa$$word
+      MONGO_INITDB_DATABASE: aurora_getaways
+
+    healthcheck:
+      test: [ "CMD", "mongosh", "--eval", "db.adminCommand('ping')"] #ping the database
+      interval: 5s #Time to wait between pings
+      timeout: 5s #Time to wait until ping considered as failed
+      retries: 24 #how many times to retry before total fail
+      start_period: 0s #when to start
+      #----------------------------------------------------------------------
+
+
+      #Our backend:
+  backend-service:
+    #on which service we're depending on:
+    depends_on:
+      database-service:
+        condition: service_healthy
+      #Image name:
+    image: veredkel/aurora_getaways-backend:1.0 #Dockerfile location
+    build: ./Backend #Container name
+    container_name: aurora_getaways-backend #Port mapping (host-port: container-port)
+    ports:
+      - 4005:4040
+    #Restart policy - if app crasher what to do - in this case, restart unless i stop it by hand 
+    restart: unless-stopped
+
+    environment:
+      MONGO_URI: mongodb://Alice:Pa$$word@database-service:27017/aurora_getaways
+
+    #---------------------------------------------------------------------------------------------------
+    #frontend service
+
+  frontend-service:
+    depends_on:
+      - backend-service
+ 
+    image: veredkel/aurora_getaways-frontend:1.0
+
+    build: ./Frontend
+
+    container_name: aurora_getaways-frontend
+
+    ports:
+      - 80:3000
+
+      #Restart policy - if app crasher what to do - in this case, restart unless i stop it by hand 
+    restart: unless-stopped
+#--------------------------------------------------------
+
+#List the above named-volumes:
+volumes:
+  aurora_getaways-volume:
